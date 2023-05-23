@@ -1,12 +1,12 @@
 #!/bin/sh
 
 helm install mycluster mysql-operator/mysql-innodbcluster \
-    -n mysql-operator \
+    -n ns-mysql-innodbcluster \
     --create-namespace \
     --set credentials.root.user='root' \
     --set credentials.root.password='example' \
     --set credentials.root.host='%' \
-    --set serverInstances=3 \
+    --set serverInstances=2 \
     --set routerInstances=1 \
     --set tls.useSelfSigned=true
 

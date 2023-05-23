@@ -1,4 +1,4 @@
 #!/bin/sh
 
-NAMESPACE=mysql-operator
+NAMESPACE=ns-mysql-operator
 kubectl config set-context --current --namespace=$NAMESPACE
